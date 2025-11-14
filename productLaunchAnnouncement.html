@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Product Launch</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333333;
+    }
+
+    /* Container Styles */
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
+
+    /* Pre-header Text */
+    .pre-header {
+      display: none;
+      font-size: 0;
+      color: #ffffff;
+      height: 0;
+      width: 0;
+    }
+
+    /* Header and Logo */
+    .email-header {
+      background-color: #007bff;
+      padding: 20px;
+      text-align: center;
+    }
+    .email-header img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: linear-gradient(to right, #ff6f61, #d9534f);
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      animation: slideIn 3s ease-out forwards;
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    /* Main Content Section */
+    .content {
+      padding: 30px;
+      background-color: #ffffff;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+    p {
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    /* Button */
+    .cta-btn {
+      background-color: #28a745;
+      color: #ffffff;
+      padding: 15px 30px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Footer Section */
+    .email-footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #777777;
+    }
+
+    .email-footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media screen and (max-width: 600px) {
+      .hero img {
+        width: 100% !important;
+      }
+      .email-container {
+        padding: 10px;
+      }
+      .content {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .cta-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Pre-header Text (hidden) -->
+  <div class="pre-header">Exclusive Offer: Get 20% off our new product launch – Limited time only!</div>
+
+  <div class="email-container">
+    <!-- Header with Logo -->
+    <div class="email-header">
+      <img src="https://via.placeholder.com/150" alt="Brand Logo">
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="https://via.placeholder.com/600x300" alt="Product Launch" />
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Introducing Our Latest Product – Get Yours Now!</h1>
+      <p>We're excited to announce the launch of our newest product, designed to change the way you work. With cutting-edge features, an elegant design, and powerful performance, this is a game-changer for your everyday needs.</p>
+      <a href="#" class="cta-btn">Shop Now and Save 20%</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="email-footer">
+      <p>You're receiving this email because you signed up for product updates at [Company Name].</p>
+      <p>To unsubscribe from future emails, <a href="#">click here</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
